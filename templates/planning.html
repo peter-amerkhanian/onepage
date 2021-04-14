@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SparkPoint Toolkit</title>
+    <link rel="icon" href="static/sparkpoint.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #ff9800;
+            padding: 25px;
+        }
+
+        .cardtainer:hover {
+            background-color: rgb(241, 241, 241);
+
+        }
+
+        hr {
+            height: 1px;
+            color:rgb(204, 204, 204);
+            background-color:rgb(204, 204, 204)
+        }
+
+        @media (max-width: 775px){
+
+
+        .col-sm-6 {
+            margin-top: 30px;
+        }
+        }
+        .fadein {
+    opacity:0;
+}
+
+        /* * { border: 1px solid red; } */
+    </style>
+<script>
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.fadein').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 100;
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1'},1000);
+            }
+            
+        }); 
+    });
+});
+</script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default" style="background:white">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Toolkit Home</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Search</button>
+            </form>
+            
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+    <div class="jumbotron" style="background-color: #ff9800;">
+        <div class="container text-center">
+            <h1 style="color:#ffffff">The SparkPoint Toolkit</h1>
+            <p style="color:#ffffff">A Guide to replicating SparkPoint</p>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <h3>III. Planning a SparkPoint Center</h3>
+        <br>
+
+        <hr>
+<div class="container" style="width:700px">
+    <h4>Overview of Planning Process</h4> 
+
+    Though every SparkPoint center’s planning time varies, on average it takes about 12 months to fully launch a center after an institution has completed the discovery phase. Multiple factors can influence the planning phase but reaching readiness on the institutional self- assessment with strong buy-in from institution, staff, and students will make the process go smoother. 
+    <img src="static\image030.png"><br>
+    When launching the planning phase, it is important to start with a strong base. <br>
+    <h4>Planning committee members</h4>
+
+This stage is designed to get members engaged, codify relationships, identify a champion, understand SparkPoint model, and define the vision. The outcome of this process is to develop a core group of members who agree to SparkPoint as a concept and commit to participate in the planning process. 
+<img src="static\image031.png" width="100%"><br>
+ 
+</div><br>
+        <div class="container fadein" style="width:500px">
+        <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd2pwi6bfoAmSUackyqmZlsf4_2F7Qwm8BicBNrym1lW0tE.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
+        </div>
+        
+        
+
+        <div class="row justify-content-center">
+            <div class="container cardtainer" style="width: 50%;border: 2px solid rgb(209, 209, 209);">
+                <h2>Download the full toolkit</h2>
+
+
+                <p style="margin: 0, 3px;">
+                    <a href="#" class="btn btn-primary">Download</a>
+                </p>
+
+            </div>
+        </div>
+
+
+    </div><br><br>
+
+    <footer class="container-fluid text-center">
+        <h4 style="color:#ffffff">SparkPoint is a product of</h4>
+        <h3 style="color:#ffffff">United Way Bay Area</h3>
+    </footer>
+
+</body>
+
+</html>
