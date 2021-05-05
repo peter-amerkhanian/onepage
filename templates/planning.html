@@ -34,7 +34,7 @@
 
         /* Add a gray background color and some padding to the footer */
         footer {
-            background-color: #ff9800;
+            background-color: #ffffff;
             padding: 25px;
         }
 
@@ -186,6 +186,9 @@
 
         @media (max-width: 767px) {
 
+            i {
+             font-size: 120%;
+        }
             .timeline-nodes:nth-child(odd) h3,
             .timeline-nodes:nth-child(odd) p {
                 text-align: left
@@ -311,18 +314,20 @@
         </div>
     </nav>
 
-    <div class style="background-color: #ff9800; height: 15rem">
-        <div class="container text-center" style="padding-top: 5rem;">
-            <h1 style="color:#ffffff; font-size: 3rem"><b>The SparkPoint Toolkit</b> </h1>
-            <p style="color:#ffffff">A Guide to replicating SparkPoint</p>
+    <div style="background-color: #f1f1f1;">
+        <div class="container-flex text-center" style="padding-top: 5rem;padding-bottom: 2rem;">
+            <img src="static\sp_logo.png" style="max-width: 50%;">
+            <h1 style=" font-size: 3rem"><b>The SparkPoint Toolkit</b> </h1>
+            <p class="lead">A Guide to replicating SparkPoint</p>
         </div>
     </div>
 
     <div class="container p-5">
         <div class="container text-center">
-            <h3><a href="#">Home</a> / Planning</h3>
-            <p class="">
-                Overview of Planning Process
+            <h3><a href="{{ url_for('index') }}">Home</a> / Planning</h3>
+            <br>
+            <h4>Overview of Planning Process</h4>
+            <p class="lead px-5">
                 Though every SparkPoint center’s planning time varies, on average it takes about 12 months to fully
                 launch a center after an institution has completed the discovery phase. Multiple factors can influence
                 the planning phase but reaching readiness on the institutional self- assessment with strong buy-in from
@@ -339,10 +344,12 @@
                     class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
                     <a href="#" class="col-10 col-md-5 order-3 order-md-1 timeline-content">
                         <h3 class=" text-light">Launch Planning Process</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas
-                            qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod
-                            corporis dignissimos porro.</p>
-                        </a>
+                        <ul class="list-group list-group-flush px-3 pb-3">
+                        <li class="list-group-item">Establish Planning Committee Members, Decision Making Structure.</li>
+                        <li class="list-group-item">Identify SparkPoint Lead for the planning phase.</li>
+                        <li class="list-group-item">If applicable, join regional network meetings.</li>
+                    </ul>    
+                    </a>
                     <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
                         <i class="fas fa-seedling"></i>
                     </div>
@@ -484,8 +491,8 @@
     <br><br>
 
     <footer class="container-fluid text-center">
-        <h4 style="color:#ffffff">SparkPoint is a product of</h4>
-        <h3 style="color:#ffffff">United Way Bay Area</h3>
+        <p class="lead">Powered by:</p>
+        <img src="static\UWBA.jpg" style="max-width: 10em;">
     </footer>
 
 </body>
